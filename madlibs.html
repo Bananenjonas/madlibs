@@ -1,0 +1,80 @@
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>MadLibs</title>
+    <link rel="stylesheet" href="ressources/css/reset.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="madlibs.css">
+    </head>
+    <body id="flex">
+      <!--Navigation -->
+      <nav class="navbar-nav">
+        <p id="navheader"><img src="./images/icons8-mustache-100.png" width="100" height="100" alt="">MadLibs</p>
+      </nav>
+
+
+      <div  class="centered_content" id="name_input">
+        <form>
+          <label for="user_input" >Enter your name</label>
+          <input class="form-control" type="text" name="message" id="user_input">
+        </form>
+
+        <input type="submit" onclick="showInput()" class="btn btn-primary"><br/>
+      </div>
+
+      <p><span id='display'></span></p>
+        <!-- Intro Text + Explanations -->
+        <div id="intro">
+          <p>Let's play Mad Libs! Do you know how the game works?</p>
+          <button id="button_yes" onclick="startGame()" type="button" name="button_yes" class="btn btn-primary">Yes</button>
+          <button id="button_no" onclick="showInstructions()" type="button" name="button_no" class="btn btn-primary">No</button>
+        </div>
+
+        <p id="instructions">Mad Libs consist that has a short story on each page with many key words replaced with blanks. Beneath each blank is specified a lexical or other category, such as "noun", "verb", "place", or "part of the body". One player asks the other players, in turn, to contribute some word for the specified type for each blank, but without revealing the context for that word. Finally, the completed story is read aloud. The result is usually comic, surreal and somewhat nonsensical.</p>
+
+        <p id="start">Ok, then let's start!</p>
+
+        <!-- Actual Mad Libs questions -->
+        <div id="madLibsQuestion">
+          <p>Enter words that come to your mind and sumbit your words to get your funny Mad Libs text.</p>
+          <form>
+            <label><b>Enter a verb:</b></label>
+            <input type="text" name="message" id="user_input_verb1">
+          </form>
+          <form>
+            <label><b>Enter a noun:</b></label>
+            <input type="text" name="message" id="user_input_noun1">
+          </form>
+          <form>
+            <label><b>Enter another noun:</b></label>
+            <input type="text" name="message" id="user_input_noun2">
+          </form>
+          <form>
+            <label><b>Enter another verb:</b></label>
+            <input type="text" name="message" id="user_input_verb2">
+          </form>
+          <form>
+            <label><b>Enter an adjective:</b></label>
+            <input type="text" name="message" id="user_input_adjective1">
+          </form>
+          <form>
+            <label><b>Enter another adjective:</b></label>
+            <input type="text" name="message" id="user_input_adjective2">
+          </form>
+          <form>
+            <label><b>Enter another adjective:</b></label>
+            <input type="text" name="message" id="user_input_adjective3">
+          </form>
+
+          <input type="submit" onclick="getMadLibsInput()"><br/>
+        </div>
+
+        <p id="test"></p>
+
+        <button type="button" name="button" class="btn btn-primary" id="play_again" onclick="startAgain()">Play Again</button>
+
+        <!-- javascript -->
+    <script src="madlibs.js" type="text/javascript"></script>
+    </body>
+</html>

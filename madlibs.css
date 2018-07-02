@@ -1,0 +1,66 @@
+/*Border */
+body  {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Spacing between yes and no button*/
+#Button1 {
+  margin-right: 20px;
+}
+
+/*Settings for not showing*/
+
+#madLibsQuestion, #intro, #instructions, #start, #play_again {
+  display: none;
+}
+
+/* Navigation*/
+.nav_madlibs {
+  padding-bottom: 30px;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: flex;
+    text-align: center;
+}
+
+#navheader  {
+  font-size: 3em;
+  color: #B27354;
+}
+
+.mid-centered {
+  margin: auto;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+/* Form settings */
+.form-control {
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  justify-content: center;
+}
+
+/* Centered content */
+#flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#instructions {
+  width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  #instructions {
+    width: auto;
+  }
+}
